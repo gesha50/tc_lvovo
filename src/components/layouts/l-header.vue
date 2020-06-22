@@ -96,11 +96,27 @@
             }
         }
         @media (max-width: 576px) {
+            .header{
+                position: relative;
+            }
             display: flex;
             justify-content: space-between;
-            align-items: center;
             .nav{
-                display: none;
+                margin-top: 100px;
+                position: fixed;
+                text-align: center;
+                width: 100%;
+                left: -100%;
+                transition: left .4s;
+                .nav__span{
+                    display: block;
+                    padding: 10px;
+                    background: #e7e1e1;
+                    &:hover{
+                        background: $blueColor;
+
+                    }
+                }
             }
             .search__text{
                 display: none;
@@ -112,7 +128,11 @@
                 }
             }
             #switcher:checked~nav {
-                display: block;
+                left: 0;
+            }
+            .material-icons{
+                padding-top: 30px;
+                padding-left: 5px;
             }
         }
     }
