@@ -5,7 +5,7 @@
             <label for="switcher" class="nav__menu"><i class="material-icons">menu</i></label>
             <div class="logoName">
                 <img class="logo" src="../../../public/logo.png" alt="">
-                TK ЛЬВОВО
+                <span class="logoText">TK ЛЬВОВО</span>
             </div>
             <nav class="nav">
                 <a class="nav__link" href="#"><span class="nav__span" >Главная</span></a>
@@ -31,7 +31,6 @@
 <style lang="scss">
     .header {
         width: 100%;
-        height: 91px;
         .logo{
             width: 50px;
         }
@@ -48,16 +47,31 @@
             grid-area: nav;
             &__link{
                 text-decoration: none;
+                display: inline-block;
+                height: 88px;
+                &:focus{
+                    background: $blueColor;
+                    .nav__span{
+                        color: #f4f4f4;
+                    }
+                }
             }
             &__span{
                 color: $fontColor;
                 padding: 35px ;
                 display: inline-block;
+                font-family: Ubuntu-Ri;
                 &:hover{
                     background: $blueColor;
                     color: #f4f4f4;
+                    &:active{
+                        background: #f1d591;
+                        color: #f1732f;
+                    }
                 }
+
             }
+
 
         }
         .search{
@@ -96,11 +110,12 @@
             }
         }
         @media (max-width: 576px) {
-            .header{
-                position: relative;
-            }
             display: flex;
             justify-content: space-between;
+            position: relative;
+            .logoText{
+                display: none;
+            }
             .nav{
                 margin-top: 100px;
                 position: fixed;
@@ -108,7 +123,8 @@
                 width: 100%;
                 left: -100%;
                 transition: left .4s;
-                .nav__span{
+                z-index: 10;
+                &__span{
                     display: block;
                     padding: 10px;
                     background: #e7e1e1;
@@ -116,6 +132,9 @@
                         background: $blueColor;
 
                     }
+                }
+                &__link{
+                    display: inline;
                 }
             }
             .search__text{

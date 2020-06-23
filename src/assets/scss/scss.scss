@@ -1,5 +1,26 @@
 @import "variables";
 
+@font-face {
+  font-family: Ubuntu;
+  src: url("~@/assets/fonts/Ubuntu.ttf?") format('truetype');
+}
+
+@font-face {
+  font-family: BebasNeue;
+  src: url("~@/assets/fonts/BebasNeue.otf?") format("opentype");
+}
+@font-face {
+  font-family: BebasNeueBold;
+  src: url("~@/assets/fonts/BebasNeueBold.otf?") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Ubuntu-Ri;
+  src: url("~@/assets/fonts/Ubuntu-RI.ttf?") format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
