@@ -9,13 +9,13 @@
             </div>
             <nav class="nav">
                 <a class="nav__link" href="#"><span class="nav__span" >Главная</span></a>
-                <a class="nav__link" href="#"><span class="nav__span" >Portfolio</span></a>
+                <a class="nav__link" href="#"><span class="nav__span" >Магазин</span></a>
                 <a class="nav__link" href="#"><span class="nav__span" >О нас</span></a>
                 <a class="nav__link" href="#"><span class="nav__span" >Контакты</span></a>
                 <a class="nav__link" href="#"><span class="nav__span" >Блог</span></a>
             </nav>
             <div class="search">
-                <span class="search__text">Поиск</span> <img src="../../../src/assets/img/search.png" alt="">
+                <span class="search__text">Поиск</span> <img src="../../assets/img/search.png" alt="">
             </div>
         </header>
     </div>
